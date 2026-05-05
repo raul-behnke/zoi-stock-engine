@@ -13,7 +13,30 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ['Clash Display', 'Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+      },
+      fontSize: {
+        'display-lg': ['56px', { lineHeight: '1.05', letterSpacing: '-0.02em' }],
+        'display-md': ['48px', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
+        'display-sm': ['32px', { lineHeight: '1.15', letterSpacing: '-0.02em' }],
+        'body-lg': ['20px', { lineHeight: '1.5' }],
+        'body-md': ['16px', { lineHeight: '1.5' }],
+        'body-sm': ['14px', { lineHeight: '1.5' }],
+      },
+      maxWidth: {
+        container: '1280px',
+      },
       colors: {
+        success: {
+          DEFAULT: 'hsl(var(--success))',
+          foreground: 'hsl(var(--success-foreground))',
+        },
+        warning: {
+          DEFAULT: 'hsl(var(--warning))',
+          foreground: 'hsl(var(--warning-foreground))',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
